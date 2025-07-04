@@ -140,9 +140,11 @@
 
   .sidebar .sidebar-links {
     flex-direction: row;
+    align-items: start;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+   
   }
 
   .sidebar .sidebar-links a {
@@ -150,6 +152,7 @@
     font-size: 16px;
     margin: 5px;
     width: auto; 
+    
   }
 
   .card {
