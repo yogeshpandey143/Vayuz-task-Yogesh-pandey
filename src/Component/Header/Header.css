@@ -1,0 +1,176 @@
+.header-container {
+  position: relative;
+  background-color: #000;
+  min-height: 600px;
+overflow: hidden;
+}
+
+.header-content {
+  position: absolute;
+  padding: 20px;
+  max-width: 400px;
+
+}
+
+.header-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 120%;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 141%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.upgrade-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  background-color: #08A7CE;
+  color: white;
+  border: none;
+  border-radius: 56px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.upgrade-btn:hover {
+  background-color: #099ac8;
+}
+
+.header-image {
+  position: absolute;
+  top: 50px;
+  left: 458px;
+  width: 507px;
+  height: 372px;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.header-card {
+  position: absolute;
+  overflow: hidden;
+}
+
+.card-one {
+  top: 297px;
+  left: 751px;
+  width: 298px;
+  height: 81px;
+}
+
+.card-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-two {
+  top: 412px;
+  left: 507px;
+  width: 298px;
+  height: 161px;
+}
+
+.card-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blur-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.blur-circle.green {
+  width: 73px;
+  height: 73px;
+  top: 162px;
+  left: 932px;
+  background: #09D809;
+  filter: blur(98.4px);
+}
+
+.blur-circle.blue {
+  width: 128px;
+  height: 128px;
+  top: 385px;
+  left: 995px;
+  background: #08A7CE;
+  filter: blur(125px);
+}
+@media (max-width: 1024px) {
+  .header-content {
+    max-width: 90%;
+    padding: 20px;
+    position: static; 
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-image {
+    position: static; 
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .header-card,
+  .blur-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 32px;
+  }
+
+  .header-content p {
+    font-size: 16px;
+  }
+
+  .upgrade-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 28px;
+  }
+
+  .header-content p {
+    font-size: 14px;
+  }
+
+  .upgrade-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .header-image {
+    width: 100%;
+  }
+}

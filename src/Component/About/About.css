@@ -1,0 +1,129 @@
+.about-container {
+  display: flex;
+  justify-content: space-between; /* Spread items to left, center, right */
+  align-items: center;
+
+  padding: 50px 40px;
+  background-color: #000;
+  color: white;
+
+}
+
+.about-title-group {
+  max-width: 25%;
+}
+
+.about-title-group h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 106%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.history-title {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+
+.about-description {
+  max-width: 40%;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.highlight {
+  color: #0dcaf0;
+  cursor: pointer;
+}
+
+.begin-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 30px;
+  gap: 15px;
+  background-color: #08A7CE;
+  border: none;
+  border-radius: 56px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.begin-btn:hover {
+  background-color: #099ac8;
+}
+
+.begin-icon {
+  font-size: 20px;
+}
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .about-title-group,
+  .about-description {
+    max-width: 100%;
+  }
+
+  .about-title-group h2 {
+    font-size: 32px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+
+  .begin-btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title-group h2 {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 13px;
+    line-height: 150%;
+  }
+
+  .begin-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title-group h2 {
+    font-size: 24px;
+  }
+
+  .about-description {
+    font-size: 12px;
+  }
+
+  .begin-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
