@@ -7,8 +7,10 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div>
+        <div className='sidebar-header'>
         <img className='logo' src={logoImage} alt="logo" />
         <button className="contact-btn">Contact Us</button>
+        </div>
         <nav className="sidebar-links">
           <a href="#">App Development</a>
           <a href="#">Challenges</a>

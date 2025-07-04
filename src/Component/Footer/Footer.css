@@ -1,12 +1,13 @@
 .footer {
   display: flex;
+  width: auto;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 50px;
   background-color: #000;
   color: white;
-  gap: 40px; /* Added spacing between columns for better wrap */
+
 }
 
 .footer-left {

@@ -3,6 +3,9 @@
   background-color: #000;
   min-height: 600px;
 overflow: hidden;
+width: auto;
+  
+
 }
 
 .header-content {

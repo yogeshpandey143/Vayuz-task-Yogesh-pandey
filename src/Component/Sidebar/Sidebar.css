@@ -1,13 +1,12 @@
 .sidebar {
-  width: 200px; 
+ width:auto; 
   background-color: #111;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  top: 0;
-  left: 0;
+  padding: 30px;
+ 
 }
 
 .sidebar .logo {
@@ -15,6 +14,13 @@
   height: 30px;
   margin-bottom: 30px;
   object-fit: contain;
+}
+
+.sidebar-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 
@@ -31,6 +37,7 @@
    z-index: 1;
     border: 1.5px solid;
      border-image-slice: 1;
+     
     border-image-source: conic-gradient(
     from 90deg at 50% 50%,
     #07A7CD 0deg,
@@ -103,17 +110,26 @@
 }
 @media (max-width: 768px) {
   .sidebar {
-    width: 100%; /* Full width for mobile */
-    flex-direction: row; /* Make sidebar items appear horizontally */
+    width: fit-content; /* Full width for mobile */
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
+   
   }
 
   .sidebar .logo {
     margin-bottom: 10px;
     width: 100px;
     height: 24px;
+  }
+  .sidebar-header {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   gap: 20px;
   }
 
   .sidebar .contact-btn {
